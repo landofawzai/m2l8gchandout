@@ -40,7 +40,7 @@
 
 
   <!-- Title above rays -->
-  <text x="400" y="55" text-anchor="middle" font-family="serif" font-size="28" fill="#000">The Presence of God</text>
+  <text x="400" y="55" text-anchor="middle" font-family="sans-serif" font-size="36" fill="#000" font-weight="bold">The Presence of God</text>
 
   <!-- Rays -->
   <g class="thin">
@@ -70,48 +70,100 @@
     <line x1="340" y1="178" x2="460" y2="178"/>
   </g>
 
+  <!-- Tree top-left -->
+  <g class="tree">
+    <line x1="265" y1="400" x2="265" y2="470"/>
+    <circle cx="265" cy="375" r="28"/>
+    <line x1="265" y1="390" x2="265" y2="415"/>
+    <line x1="265" y1="402" x2="252" y2="388"/>
+    <line x1="265" y1="402" x2="278" y2="388"/>
+  </g>
+  <text x="155" y="475" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#000">Three Verses (B)</text>
+
   <!-- River banks -->
   <path class="line" d="
-    M 394 330
-    C 382 375, 338 415, 322 465
-    C 300 530, 378 585, 418 640
-    C 450 690, 332 770, 262 850
-    C 210 910, 235 1000, 285 1120" />
+    M 369 330
+    C 357 375, 313 415, 297 465
+    C 275 530, 353 585, 393 640
+    C 425 690, 307 770, 237 850
+    C 185 910, 210 1000, 260 1120" />
 
   <path class="line" d="
-    M 406 330
-    C 396 375, 368 415, 358 465
-    C 342 530, 425 585, 468 640
-    C 505 690, 428 770, 398 850
-    C 375 910, 528 1000, 650 1120" />
+    M 431 330
+    C 421 375, 393 415, 383 465
+    C 367 530, 450 585, 493 640
+    C 530 690, 453 770, 423 850
+    C 400 910, 553 1000, 675 1120" />
 
 
-  <!-- Dashed return path -->
-  <path class="dash" marker-end="url(#arrow)" d="
-    M 260 1125
-    C 175 1108, 115 1045, 110 980
-    C 105 885, 130 815, 180 760" />
+  <!-- Tree right-upper -->
+  <g class="tree">
+    <line x1="435" y1="470" x2="435" y2="540"/>
+    <circle cx="435" cy="445" r="28"/>
+    <line x1="435" y1="460" x2="435" y2="485"/>
+    <line x1="435" y1="472" x2="422" y2="458"/>
+    <line x1="435" y1="472" x2="448" y2="458"/>
+  </g>
+  <text x="555" y="565" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#000">Eight Commands (C)</text>
+
+  <!-- River text - individual characters along path -->
+  <g id="riverText">
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(377.6,383.1) rotate(118.3)">M</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(366.9,402.6) rotate(118.6)">i</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(356.5,422.5) rotate(116.3)">n</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(347.2,443.1) rotate(111.7)">i</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(340.1,464.8) rotate(104.7)">s</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(337.2,484.7) rotate(89.9)">t</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(339.8,504.1) rotate(75.0)">r</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(347.1,523.0) rotate(63.6)">y</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(371.6,559.5) rotate(50.6)">T</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(387.0,577.2) rotate(47.7)">O</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(419.4,612.0) rotate(47.6)">t</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(434.5,629.2) rotate(50.3)">h</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(446.0,645.0) rotate(63.0)">e</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(449.2,675.0) rotate(101.7)">L</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(443.7,691.7) rotate(113.3)">o</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(434.6,709.5) rotate(120.6)">r</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(422.5,728.0) rotate(125.1)">d</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(392.4,767.3) rotate(128.8)">(</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(375.9,787.7) rotate(128.8)">A</text>
+<text x="0" y="0" font-family="sans-serif" font-size="24" fill="#000" font-weight="bold" text-anchor="middle" dominant-baseline="central" transform="translate(359.5,808.5) rotate(127.7)">)</text>
+  </g>
+
 
   <!-- Trees left -->
+  <text x="165" y="700" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#000">Your Story (D)</text>
   <g class="tree">
-    <line x1="275" y1="665" x2="275" y2="735"/>
-    <circle cx="275" cy="640" r="28"/>
-    <line x1="275" y1="655" x2="275" y2="680"/>
-    <line x1="275" y1="667" x2="262" y2="653"/>
-    <line x1="275" y1="667" x2="288" y2="653"/>
+    <line x1="270" y1="665" x2="270" y2="735"/>
+    <circle cx="270" cy="640" r="28"/>
+    <line x1="270" y1="655" x2="270" y2="680"/>
+    <line x1="270" y1="667" x2="257" y2="653"/>
+    <line x1="270" y1="667" x2="283" y2="653"/>
 
-    <line x1="320" y1="625" x2="320" y2="695"/>
-    <circle cx="320" cy="600" r="28"/>
-    <line x1="320" y1="615" x2="320" y2="640"/>
-    <line x1="320" y1="627" x2="307" y2="613"/>
-    <line x1="320" y1="627" x2="333" y2="613"/>
+    <line x1="315" y1="625" x2="315" y2="695"/>
+    <circle cx="315" cy="600" r="28"/>
+    <line x1="315" y1="615" x2="315" y2="640"/>
+    <line x1="315" y1="627" x2="302" y2="613"/>
+    <line x1="315" y1="627" x2="328" y2="613"/>
 
-    <line x1="295" y1="705" x2="295" y2="775"/>
-    <circle cx="295" cy="680" r="28"/>
-    <line x1="295" y1="695" x2="295" y2="720"/>
-    <line x1="295" y1="707" x2="282" y2="693"/>
-    <line x1="295" y1="707" x2="308" y2="693"/>
+    <line x1="290" y1="705" x2="290" y2="775"/>
+    <circle cx="290" cy="680" r="28"/>
+    <line x1="290" y1="695" x2="290" y2="720"/>
+    <line x1="290" y1="707" x2="277" y2="693"/>
+    <line x1="290" y1="707" x2="303" y2="693"/>
   </g>
+
+  <!-- Tree below left cluster -->
+  <g class="tree">
+    <line x1="205" y1="830" x2="205" y2="900"/>
+    <circle cx="205" cy="805" r="28"/>
+    <line x1="205" y1="820" x2="205" y2="845"/>
+    <line x1="205" y1="832" x2="192" y2="818"/>
+    <line x1="205" y1="832" x2="218" y2="818"/>
+  </g>
+  <text x="92" y="840" text-anchor="start" font-family="sans-serif" font-size="25" fill="#000">The</text>
+  <text x="92" y="865" text-anchor="start" font-family="sans-serif" font-size="25" fill="#000">Father's</text>
+  <text x="92" y="890" text-anchor="start" font-family="sans-serif" font-size="25" fill="#000">Story (F)</text>
 
   <!-- Trees bottom-left -->
   <g class="tree">
@@ -127,6 +179,33 @@
     <line x1="245" y1="1047" x2="232" y2="1033"/>
     <line x1="245" y1="1047" x2="258" y2="1033"/>
   </g>
+  <text x="157" y="1110" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#000">Gathering (G)</text>
+
+  <!-- Tree right 45% -->
+  <g class="tree">
+    <line x1="530" y1="650" x2="530" y2="720"/>
+    <circle cx="530" cy="625" r="28"/>
+    <line x1="530" y1="640" x2="530" y2="665"/>
+    <line x1="530" y1="652" x2="517" y2="638"/>
+    <line x1="530" y1="652" x2="543" y2="638"/>
+  </g>
+  <text x="603" y="695" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#000">Stories (H)</text>
+
+  <!-- Two trees right 60% -->
+  <g class="tree">
+    <line x1="505" y1="790" x2="505" y2="860"/>
+    <circle cx="505" cy="765" r="28"/>
+    <line x1="505" y1="780" x2="505" y2="805"/>
+    <line x1="505" y1="792" x2="492" y2="778"/>
+    <line x1="505" y1="792" x2="518" y2="778"/>
+
+    <line x1="550" y1="810" x2="550" y2="880"/>
+    <circle cx="550" cy="785" r="28"/>
+    <line x1="550" y1="800" x2="550" y2="825"/>
+    <line x1="550" y1="812" x2="537" y2="798"/>
+    <line x1="550" y1="812" x2="563" y2="798"/>
+  </g>
+  <text x="550" y="900" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#000">Conversations (E)</text>
 
   <!-- Trees right -->
   <g class="tree">
@@ -160,4 +239,5 @@
     <line x1="705" y1="1037" x2="692" y2="1023"/>
     <line x1="705" y1="1037" x2="718" y2="1023"/>
   </g>
+  <text x="650" y="1143" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#000">Key Words (I)</text>
 </svg>
