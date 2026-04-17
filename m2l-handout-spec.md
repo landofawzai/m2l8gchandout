@@ -26,7 +26,7 @@ The document is for **Tsunami Unleashed**, a discipleship multiplication movemen
 - **Base font size:** 9pt, line-height ~1.3
 - **Cards must flow in correct reading order** (A, B, C, D, E, F, G, H, I) — the reader should encounter them in sequence as they read down column 1 then column 2
 - **Cards may split across columns or pages** — do NOT use `break-inside: avoid` on cards, as it will push content to overflow
-- **Accent color:** Green (#2e7d32) for card title borders, section headings, encounter question headers, and the "Remember" box
+- **Accent color:** Green (#2e7d32) for card title text, card title borders, section headings, encounter question headers, and the "Remember" box
 - **Print color adjust:** Ensure backgrounds print with `-webkit-print-color-adjust: exact`
 
 ### Column & page breaks (print)
@@ -64,7 +64,7 @@ Style notes:
 
 Each card follows this structure:
 1. **Green top border** (1.5px solid #2e7d32) separating it from the previous card
-2. **Card title** — centered, bold, ~10pt (e.g., "A. Ministry TO the Lord")
+2. **Card title** — centered, bold, green (#2e7d32), ~10pt (e.g., "A. Ministry TO the Lord")
 3. **Card subtitle** — centered, italic, underlined, smaller gray text
 4. **Body content** — paragraphs and/or numbered lists with bold keywords
 
@@ -241,7 +241,7 @@ The Father is waiting for you. Recognize your sin, turn toward him, and he will 
 
 ## Card H: Gatherings
 
-**Title:** H. Gatherings — Every Time Disciples, Leaders, Jesus Communities Meet
+**Title:** H. Gatherings — Every Time Disciples, Leaders,<br>Jesus Communities Meet *(the `<br>` forces the line break on both screen and print)*
 **Subtitle:** See Him → Love Him → Live for Him
 
 **Body:**
