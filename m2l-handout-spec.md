@@ -142,7 +142,7 @@ Use these verses to share the message of Jesus with anyone. They are enough.
 7. **Give Generously** (Mk 12:41–44)
 8. **Make Disciples** (Mt 28:16–20; Lk 10:1–9, 2 Ti 2:2)
 
-**Footer:** See hand motions – 7gc.me/8gchand
+**Footer:** See hand motions – 7gc.me/8gchand *(hyperlinked to https://7gc.me/8gchand)*
 
 ---
 
@@ -409,9 +409,9 @@ Free to all. CC0 1.0 Public Domain.
 We ask only this: keep it faithful to
 Scripture and worthy of Christ.
 Updated: 2026-04-16 · v7.4
-Latest Update: 7gc.me/mh2 *(hyperlinked to https://7gc.me/mh2)*
-Save this page to your device and share it
-with others for offline use.
+Latest Update: 7gc.me/mh2 *(hyperlinked to https://7gc.me/mh2, opens new tab)*
+
+**Save this page to your device and share it with others for offline use.** *(bold; on-screen only — hidden from print via `.offline-note { display: none }` in `@media print`)*
 
 ---
 
@@ -461,6 +461,8 @@ Format: bold scripture reference followed by dash and description. Green bullet 
 - Light green background (#e8f0e8)
 - Green border (1.5px solid #2e7d32)
 - Contains: "More information" label (small caps gray) and "tothelord.com" (bold green, larger, hyperlinked to https://tothelord.com)
+
+**Link behavior:** every hyperlink in the document uses `target="_blank" rel="noopener"` so clicks open in a new tab without leaving the handout.
 
 Scripture list (same format as anchor texts):
 
