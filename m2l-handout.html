@@ -287,20 +287,69 @@
     padding-top: 4pt;
   }
 
-  /* SCREEN: single column, mobile-friendly. Print CSS above stays for @media print. */
+  /* Hidden by default (print); shown on screen only */
+  .screen-hero { display: none; }
+
+  /* SCREEN: polished single-column layout. Print CSS above stays for @media print. */
   @media screen {
+    html {
+      background: #eef2ee;
+      background-image: radial-gradient(ellipse at top, #f5f9f5 0%, #eaf0ea 60%, #e2e8e2 100%);
+      background-attachment: fixed;
+    }
     html, body {
       font-size: 16px;
-      line-height: 1.55;
-      background: #fafafa;
+      line-height: 1.6;
+      color: #1f2a1f;
     }
     body {
-      max-width: 720px;
+      max-width: 780px;
       margin: 0 auto;
-      padding: 20px 18px 60px;
+      padding: 0 0 48px;
       background: #fff;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 32px rgba(20, 50, 20, 0.10);
     }
+
+    /* Hero banner at the top */
+    .screen-hero {
+      display: block;
+      text-align: center;
+      padding: 52px 28px 42px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.18) 0%, transparent 55%),
+        linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+      color: #fff;
+      position: relative;
+    }
+    .screen-hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.35rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.15;
+    }
+    .screen-hero .tagline {
+      margin: 0;
+      font-size: 1.05rem;
+      opacity: 0.94;
+      font-weight: 400;
+    }
+    .screen-hero::after {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 3px;
+      background: rgba(255,255,255,0.55);
+      border-radius: 2px;
+      margin: 20px auto 0;
+    }
+
+    /* Content padding (cards + teaching) */
+    .cards,
+    .teaching {
+      padding: 0 28px;
+    }
+
     .cards {
       column-count: 1;
       column-rule: none;
@@ -314,54 +363,144 @@
     }
     .page-break { display: none; }
 
+    /* River graphic framed */
+    .river {
+      padding: 28px 20px 18px;
+      margin: 28px 0 24px;
+      background: linear-gradient(180deg, #f3f8f3 0%, #fafdfa 100%);
+      border: 1px solid #dde6dd;
+      border-radius: 14px;
+      text-align: center;
+    }
     .river img { max-width: 340px; }
-    .river-caption { font-size: 0.95rem; }
-    .river-caption .ref { font-size: 0.85rem; }
+    .river-caption { font-size: 0.97rem; padding: 0 8px; }
+    .river-caption .ref { font-size: 0.85rem; color: #666; }
 
-    .card { padding-top: 14px; margin-top: 18px; }
-    .card-title { font-size: 1.15rem; margin-bottom: 4px; }
-    .card-subtitle { font-size: 0.95rem; margin-bottom: 10px; }
+    /* Cards as soft panels */
+    .card {
+      background: #fff;
+      border: 1px solid #e1e8e1;
+      border-top: 3px solid #2e7d32;
+      border-radius: 12px;
+      padding: 22px 24px 18px;
+      margin-top: 18px;
+      box-shadow: 0 1px 3px rgba(20, 50, 20, 0.04);
+    }
+    .card:first-of-type {
+      border-top: 3px solid #2e7d32;
+      padding-top: 22px;
+      margin-top: 0;
+    }
+    .card-title {
+      color: #2e7d32;
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+      letter-spacing: -0.005em;
+    }
+    .card-subtitle {
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      color: #3c4a3c;
+    }
 
-    p { margin: 0 0 0.7em 0; }
-    ol, ul { padding-left: 1.5em; margin: 0.4em 0 0.8em 0; }
-    ol li, ul li { margin-bottom: 0.35em; }
+    p { margin: 0 0 0.75em 0; }
+    ol, ul { padding-left: 1.6em; margin: 0.4em 0 0.9em 0; }
+    ol li, ul li { margin-bottom: 0.4em; }
+
+    strong { color: #1b3a1b; }
 
     .ref-line,
     .footer-small,
-    .keyword .scrip,
-    .doc-footer { font-size: 0.85rem; }
+    .keyword .scrip { font-size: 0.88rem; }
+    .doc-footer { font-size: 0.9rem; }
 
-    .encounter { margin: 0.6em 0 0.6em 0.6em; }
-    .encounter h4 { font-size: 1rem; margin: 0.8em 0 0.3em 0; }
-    .encounter-return { font-size: 0.95rem; margin: 0.6em 0; }
-
-    .story-group .cmd { margin: 0.6em 0 0.2em 0; }
-
-    .keyword { margin-bottom: 0.9em; }
-
-    .remember {
-      font-size: 1rem;
-      padding: 14px;
-      margin: 20px 0;
+    .encounter {
+      margin: 0.8em 0;
+      padding: 14px 16px;
+      background: #f4f8f4;
+      border-left: 3px solid #2e7d32;
+      border-radius: 0 8px 8px 0;
+    }
+    .encounter h4 { font-size: 1.02rem; margin: 0.6em 0 0.3em 0; }
+    .encounter h4:first-child { margin-top: 0; }
+    .encounter-return {
+      font-size: 0.95rem;
+      margin: 1em 0;
+      padding: 10px 14px;
+      background: #fff8e8;
+      border-left: 3px solid #d4a017;
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
     }
 
-    .teaching h1 { font-size: 1.6rem; margin-bottom: 12px; padding-bottom: 8px; }
-    .teaching h2 { font-size: 1.2rem; margin: 16px 0 6px; }
-    .teaching h3 { font-size: 1.05rem; margin: 14px 0 6px; }
-    .teaching p { line-height: 1.55; margin-bottom: 0.8em; }
-    .teaching ul.scriptures li { padding-left: 18px; margin-bottom: 6px; line-height: 1.5; }
+    .story-group .cmd {
+      margin: 0.7em 0 0.25em 0;
+      color: #2e7d32;
+    }
+
+    .keyword {
+      margin-bottom: 1em;
+      padding-bottom: 0.6em;
+      border-bottom: 1px dashed #d9e0d9;
+    }
+    .keyword:last-child { border-bottom: none; }
+
+    /* Remember + How to Use boxes */
+    .remember {
+      font-size: 1.05rem;
+      padding: 18px 16px;
+      margin: 28px 0 20px;
+      border-radius: 10px;
+      background: #f3f8f3;
+    }
+    .how-to-use {
+      padding: 20px 22px;
+      margin: 24px 0;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #f4f9f4 0%, #fafdfa 100%);
+    }
+    .how-to-use .title { font-size: 1.2rem; margin-bottom: 8px; }
+    .how-to-use .url { font-size: 1.1rem; margin-top: 10px; }
+
+    /* Teaching page */
+    .teaching {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px dashed #cfdbcf;
+    }
+    .teaching h1 {
+      font-size: 1.85rem;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      color: #1b3a1b;
+    }
+    .teaching h2 { font-size: 1.25rem; margin: 22px 0 8px; }
+    .teaching h3 { font-size: 1.08rem; margin: 18px 0 6px; }
+    .teaching p { line-height: 1.65; margin-bottom: 0.9em; }
+    .teaching ul.scriptures li { padding-left: 20px; margin-bottom: 8px; line-height: 1.55; }
     .teaching ul.scriptures li::before { left: 2px; }
 
     .more-info-box {
       float: right;
       width: 200px;
-      margin: 0 0 12px 16px;
-      padding: 10px 12px;
+      margin: 0 0 14px 20px;
+      padding: 14px 14px;
+      border-radius: 10px;
     }
     .more-info-box .label { font-size: 0.8rem; }
     .more-info-box .url { font-size: 1.15rem; }
 
-    .teaching-footer { font-size: 0.85rem; margin-top: 24px; padding-top: 8px; }
+    .teaching-footer {
+      font-size: 0.88rem;
+      margin-top: 28px;
+      padding-top: 10px;
+    }
+
+    .doc-footer {
+      margin-top: 20px;
+      padding: 16px 20px 0;
+      border-top: 1px solid #e5eae5;
+    }
   }
 
   /* PRINT: when a card starts a new column/page, move the green separator
@@ -381,18 +520,30 @@
   }
 
   @media screen and (max-width: 520px) {
-    body { padding: 14px 14px 50px; box-shadow: none; }
+    body { padding: 0 0 32px; box-shadow: none; }
+    .cards,
+    .teaching { padding: 0 16px; }
+    .screen-hero { padding: 36px 20px 28px; }
+    .screen-hero h1 { font-size: 1.8rem; }
+    .screen-hero .tagline { font-size: 0.98rem; }
+    .river { margin: 20px 0 18px; padding: 20px 14px 14px; border-radius: 10px; }
     .river img { max-width: 100%; }
+    .card { padding: 18px 18px 14px; }
+    .card-title { font-size: 1.15rem; }
     .more-info-box {
       float: none;
       width: auto;
-      margin: 12px 0;
+      margin: 14px 0;
     }
-    .card-title { font-size: 1.1rem; }
   }
 </style>
 </head>
 <body>
+
+<header class="screen-hero">
+  <h1>Life with God</h1>
+  <p class="tagline">A guide for being with Jesus and helping others do the same</p>
+</header>
 
 <div class="cards">
 
