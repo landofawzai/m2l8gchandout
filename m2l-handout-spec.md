@@ -11,8 +11,8 @@ The document is for **Tsunami Unleashed**, a discipleship multiplication movemen
 
 ### Screen vs Print
 
-- **Print (Letter / A4):** Two-column layout with forced column/page breaks (see "Column & page breaks" below).
-- **Screen:** `@media screen` overrides collapse the layout into a single responsive column with readable typography (16px base, max-width 720px, mobile breakpoint at 520px). Forced breaks are suppressed.
+- **Print (Letter / A4):** Two-column layout with forced column/page breaks (see "Column & page breaks" below). A green "Life with God" title + tagline appears at the top of page 1 (print-only `.print-hero`).
+- **Screen:** `@media screen` overrides collapse the layout into a single responsive column with readable typography (16px base, max-width 780px, mobile breakpoint at 520px). A green gradient hero banner ("Life with God" + tagline) appears at the top (screen-only `.screen-hero`). Forced breaks are suppressed.
 
 ---
 
