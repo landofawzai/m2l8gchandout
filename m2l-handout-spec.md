@@ -409,7 +409,9 @@ Free to all. CC0 1.0 Public Domain.
 We ask only this: keep it faithful to
 Scripture and worthy of Christ.
 Updated: 2026-04-16 · v7.4
-Latest Update: 7gc.me/mh2
+Latest Update: 7gc.me/mh2 *(hyperlinked to https://7gc.me/mh2)*
+Save this page to your device and share it
+with others for offline use.
 
 ---
 
@@ -458,7 +460,7 @@ Format: bold scripture reference followed by dash and description. Green bullet 
 **Include a "More information" box** floated right, next to this section:
 - Light green background (#e8f0e8)
 - Green border (1.5px solid #2e7d32)
-- Contains: "More information" label (small caps gray) and "tothelord.com" (bold green, larger)
+- Contains: "More information" label (small caps gray) and "tothelord.com" (bold green, larger, hyperlinked to https://tothelord.com)
 
 Scripture list (same format as anchor texts):
 
