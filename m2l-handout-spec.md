@@ -235,7 +235,7 @@ The Father is waiting for you. Recognize your sin, turn toward him, and he will 
 5. Pass the cup around. Each person dips their bread and passes the cup to the next person saying, "The blood of Jesus, given for us." Hold until everyone has dipped.
 6. Ask someone to pray: "Thank you Jesus for your body and your blood. Amen."
 7. Eat together.
-8. After everyone has eaten, ask: "What does that show you about the God who's with you?"
+8. After everyone has eaten, ask someone to pray: "Thank you Jesus for your body and your blood. Amen."
 
 ---
 
