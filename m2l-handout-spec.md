@@ -480,7 +480,7 @@ The river graphic (`rivercross.png`) should be embedded as a base64 data URI in 
 
 ## Output
 
-- Single HTML file at `m2l-handout.html`
+- Single HTML file at `index.html` (served as the site root via GitHub Pages)
 - Self-contained (embedded image, inline styles)
 - Optimized for print (Ctrl+P in browser should produce clean 4-page output) and for mobile/desktop screen viewing (single responsive column)
 - No external dependencies
