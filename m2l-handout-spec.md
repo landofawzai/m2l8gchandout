@@ -1,4 +1,4 @@
-# M2L Handout — Build Spec v7.4
+# M2L Handout — Build Spec v7.5
 
 ## Overview
 
@@ -29,6 +29,22 @@ The document is for **Tsunami Unleashed**, a discipleship multiplication movemen
 - **Accent color:** Green (#2e7d32) for card title text, card title borders, section headings, encounter question headers, and the "Remember" box
 - **Print color adjust:** Ensure backgrounds print with `-webkit-print-color-adjust: exact`
 
+### Page 1 fit (important — the tightest constraint in the document)
+
+Page 1, column 1 holds the river graphic **and all of Card A**; column 2 holds Cards B, C, and D.
+Column 1 has ~756pt of usable height and the river image alone consumes roughly half of it, so
+**Card A cannot grow without something else giving way.** If column 1 overflows, Card A spills into
+column 2, which pushes Card B's `break-before: column` onto a new sheet and turns the handout into
+5 pages (it must stay 4 — two sheets, double-sided).
+
+Print spacing is therefore tuned tight: `p` 3pt bottom margin, `ol/ul` `2pt 0 3pt`, list items 1pt,
+`.card` 5pt top margin, `.river` 4pt bottom margin, `.river-caption` 3pt top margin. All of these are
+overridden by `@media screen`, so changing them affects print only.
+
+**Before shipping any content addition to Cards A–D, render the page to PDF and confirm it is still
+4 pages.** As of v7.5 there is only ~15–30pt of slack (about one to two lines) — the same margin the
+v7.4 layout had.
+
 ### Column & page breaks (print)
 
 - **Card B** starts at the top of column 2 on page 1 (`break-before: column`).
@@ -44,7 +60,7 @@ The document is for **Tsunami Unleashed**, a discipleship multiplication movemen
 The document begins with a river illustration. The image file is `rivercross.png` and should be embedded as base64 in the HTML for portability.
 
 - **Title above graphic:** "The Presence of God" (this is IN the image itself, not separate text)
-- **Max width:** ~3.2 inches, centered
+- **Max width (print):** ~2.6 inches, centered (reduced from 3.2in in v7.5 to make room for Card A's added content — see "Page 1 fit" below). On screen the image is 340px.
 - **Below the graphic**, centered text:
 
 > A river flows from **God's presence**. It starts as a trickle. It becomes a massive river. Fruit trees grow on both banks. Their fruit for food, their leaves for healing. **Wherever it flows**, **everything lives**.
@@ -81,6 +97,8 @@ Reference lines (like "More about...") should be smaller (~7.5pt), gray, italic 
 
 Ministry TO the Lord means seeking God's presence. It is coming to Him for who He is, not for what He gives, not for what He does, not for how He makes you feel. It is like a child who wants to be with her father, just to be with him.
 
+He is already with you, whether or not you feel Him (Gen 28:16; 1 Pet 1:8). You are not trying to get His attention. You are giving Him yours.
+
 It is the foundation for all our life with Jesus. He says "Love the Lord your God with all your heart and with all your soul and with all your mind. This is the **first and greatest** commandment." (Mt 22:37-38)
 
 Everything else must flow from Ministry TO the Lord
@@ -90,10 +108,11 @@ Everything else must flow from Ministry TO the Lord
 1. **Set aside regular time** to be with God — not to ask, but just to be with Him.
 2. **Tell God** who He is — His faithfulness, goodness, and holiness.
 3. **Thank God** for who He is, not only for what He has done.
-4. **Confess** your sins honestly. Confession clears the way to be near Him.
+4. **Confess** your sins honestly. The way is already open through Jesus (Heb 10:19). Confession lets you come with a true heart (Heb 10:22).
 5. When you catch yourself making requests, pause. **Return** to just being with Him.
-6. **Read the Bible** to see who God is, not only to learn what to do.
-7. **Sing**, **read** a poem, **sit** quietly, take a **walk**, **write** to Him. The form does not matter. The direction does — toward Him.
+6. **Be still.** Let go of your striving — that is what "be still" means (Ps 46:10). Listen, like Mary at His feet (Lk 10:39). He speaks, He cleanses, He gives. Your part is to stay.
+7. **Read the Bible** to see who God is, not only to learn what to do.
+8. **Sing**, **read** a poem, **sit** quietly, take a **walk**, **write** to Him. The form does not matter. The direction does — toward Him.
 
 *(No "More about" reference line on this card — it was intentionally removed)*
 
@@ -339,8 +358,12 @@ We gather not as an audience, but as family around the Father.
 
 **Format:** Bold term, then definition paragraph, then scripture references in small gray text. Each term+definition+reference should be kept together (use `break-inside: avoid` on each entry wrapper).
 
+**The Presence of God**
+God Himself, with you and in you through Jesus. Not a feeling. Not a place you must reach. He is already there. Ministry TO the Lord is turning toward Him.
+*John 14:23; 1 Corinthians 3:16; Psalm 139:7-10*
+
 **Ministry TO the Lord**
-Ministry TO the Lord means seeking God's presence. It is coming to Him for who He is, not for what He gives, not for what He does, not for how He makes you feel. It is like a child who wants to be with her father, just to be with him.
+Ministry TO the Lord means seeking God's presence. It is coming to Him for who He is, not for what He gives, not for what He does, not for how He makes you feel. It is like a child who wants to be with her father, just to be with him. It is not the same as His presence. He is the Presence. Ministry TO the Lord is coming to sit with Him.
 
 **Ministry FOR the Lord**
 Ministry FOR the Lord means serving God and others. It is doing the work of loving, giving, praying for others, teaching, and making disciples. It flows from Ministry TO the Lord.
@@ -408,7 +431,7 @@ TsunamiUnleashed.org
 Free to all. CC0 1.0 Public Domain.
 We ask only this: keep it faithful to
 Scripture and worthy of Christ.
-Updated: 2026-04-16 · v7.4
+Updated: 2026-09-10 · v7.5
 Latest Update: 7gc.me/mh2 *(hyperlinked to https://7gc.me/mh2, opens new tab)*
 
 **Save this page to your device and share it with others for offline use.** *(bold; on-screen only — hidden from print via `.offline-note { display: none }` in `@media print`)*
@@ -438,9 +461,13 @@ Ministry TO the Lord requires time. A husband and wife cannot have a real relati
 
 You can read the Bible, pray for needs, worship, serve, and lead — all in Jesus' name — and still miss the one thing that matters. The issue is not serving the Lord. The issue is serving without first giving Him your attention, affection, and love. Martha was serving Jesus in the same room on the same afternoon. Jesus said she was missing it. Mary was simply there at His feet. Jesus said she chose what was better. Martha's service was not wrong. What was wrong was serving without first sitting at His feet. The test is not the activity. The test is the direction of your heart.
 
+### The seat (green heading)
+
+God does not only want us to come. He wants us to sit. Mary sat at His feet and listened. When we sit, the work shifts to Him: He speaks, He cleanses, He feeds. "Be still" in Psalm 46 means let go — drop your hands. Then the verse finishes: "and know that I am God." Sitting is not the end. Knowing Him is.
+
 ### The pattern (green heading)
 
-At Antioch, the leaders were before the Lord in worship and fasting when the Holy Spirit spoke and sent Barnabas and Paul to the nations. The river was flowing. It overflowed. The greatest mission movement in the New Testament began not with strategy but with presence.
+At Antioch, the leaders were before the Lord in worship and fasting — letting go of even food to be with Him. While they were ministering to Him, the Holy Spirit spoke and sent Barnabas and Paul to the nations. The river was flowing. It overflowed. The greatest mission movement in the New Testament began not with strategy but with presence.
 
 ### The anchor texts — presence before activity: (subheading)
 
@@ -451,6 +478,11 @@ Format: bold scripture reference followed by dash and description. Green bullet 
 - **John 15:4–5** — Remain in me. Apart from me you can do nothing.
 - **Acts 13:1–3** — They were worshiping the Lord. Then the Holy Spirit sent them.
 - **Exodus 33:14–15** — Moses said if your presence does not go with us, do not send us.
+- **Hebrews 10:19–22** — We have confidence to enter by the blood of Jesus. Let us draw near.
+- **James 4:8** — Draw near to God and He will draw near to you.
+- **Psalm 46:10** — Be still (let go), and know that I am God.
+- **Ephesians 2:6** — God seated us with Him.
+- **John 14:23** — We will come to him and make our home with him.
 - **Isaiah 6:1–8** — Isaiah saw the Lord first. Then he said, "Send me."
 - **Psalm 27:4** — One thing I ask: to dwell in the house of the Lord, to gaze on His beauty.
 - **1 Chronicles 16:11** — Seek the Lord and His strength. Seek His presence continually.
