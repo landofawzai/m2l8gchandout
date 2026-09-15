@@ -512,6 +512,22 @@ Scripture list (same format as anchor texts):
 
 The river graphic (`rivercross.png`) should be embedded as a base64 data URI in the HTML `<img>` tag so the document is fully self-contained. The image file will be provided at `/mnt/user-data/uploads/rivercross.png`.
 
+**Source files in the repo root** (none of these are referenced by the published page —
+the graphic lives inside `index.html` as a base64 data URI, so editing a file here changes
+nothing live until it is re-embedded):
+
+| File | Role |
+|---|---|
+| `rivercross.svg` | Vector master — edit this one |
+| `rivercross.png` | 1600×2400 raster export — **this is the copy embedded in `index.html`** |
+| `rivercross-white.png` | A second 1600×2400 export, also white-backed; not used by the page |
+| `RiverOriginal.png`, `clearriver.png` | Earlier drafts, unused |
+
+Keep these as PNG/SVG. This is line art on a flat background, the case JPEG is worst at:
+exporting `rivercross-white.png` to a quality-95 JPEG produced a 467 KB file against the
+PNG's 212 KB — bigger *and* lossy. If a JPEG is ever needed for a tool that will not
+accept a PNG, generate it as a throwaway rather than committing it here.
+
 ---
 
 ## Output
