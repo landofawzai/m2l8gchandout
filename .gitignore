@@ -1,3 +1,6 @@
 node_modules/
 .claude/
 *.log
+
+# Working specs kept local: drafted here, applied to index.html, not published
+life-with-god-updates.md
