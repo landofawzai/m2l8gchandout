@@ -522,6 +522,14 @@ nothing live until it is re-embedded):
 | `rivercross.png` | 1600×2400 raster export — **this is the copy embedded in `index.html`** |
 | `rivercross-white.png` | A second 1600×2400 export, also white-backed; not used by the page |
 | `RiverOriginal.png`, `clearriver.png` | Earlier drafts, unused |
+| `arm-commands.svg` / `.png` | Arm diagram mapping the 8 great commands onto an arm and hand, 1600×3485. Black line art |
+| `arm-commands-v30.svg` / `.png` | Working copy of the above, colorized — gold (`#B8860B`) life-line, warm-neutral arm |
+
+The arm diagram is **not on the page yet**. Its `.svg` is the master and the `.png` a
+render of it; re-rendering requires the `DejaVu Sans` font the SVG asks for, or every
+label re-flows in the Arial fallback. Its viewBox height (`24999.01`) is deliberate —
+it preserves the render scale earlier versions used, so keep
+`height = width × 24999.01/11477` if exporting at another width.
 
 Keep these as PNG/SVG. This is line art on a flat background, the case JPEG is worst at:
 exporting `rivercross-white.png` to a quality-95 JPEG produced a 467 KB file against the
