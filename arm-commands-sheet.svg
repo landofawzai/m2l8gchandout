@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1000 1000" width="1000" height="1000"
+     role="img" aria-labelledby="sheet-title sheet-desc">
+  <title id="sheet-title">Arm commands diagram with the sun-heart, hand-heart and hand-point icons</title>
+  <desc id="sheet-desc">Contact sheet: the arm commands diagram on the left, the three icons stacked on the
+  right. Each panel references its source file directly, so this sheet reflects whatever those files
+  currently contain.</desc>
+
+  <!-- Live references. Nothing here is a copy: edit a source file and this sheet changes with it. -->
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <!-- left: the arm commands diagram -->
+  <image xlink:href="arm-commands-v30.svg" href="arm-commands-v30.svg"
+         x="32" y="40" width="440" height="900" preserveAspectRatio="xMidYMid meet"/>
+  <text x="252" y="966" font-family="Georgia, 'Times New Roman', serif" font-size="18"
+        fill="#666666" text-anchor="middle">arm-commands-v30.svg</text>
+
+  <!-- right: the icons, top to bottom, at a quarter of their former size.
+       Each box keeps its old centre, so the column still spans the arm's height. -->
+  <image xlink:href="sun-heart-icon.svg" href="sun-heart-icon.svg"
+         x="683" y="118.75" width="114" height="52.5" preserveAspectRatio="xMidYMid meet"/>
+
+  <image xlink:href="hand-heart-icon.svg" href="hand-heart-icon.svg"
+         x="683" y="418.75" width="114" height="72.5" preserveAspectRatio="xMidYMid meet"/>
+
+  <image xlink:href="hand-point-icon.svg" href="hand-point-icon.svg"
+         x="683" y="762.75" width="114" height="72.5" preserveAspectRatio="xMidYMid meet"/>
+</svg>

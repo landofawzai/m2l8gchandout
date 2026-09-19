@@ -527,6 +527,8 @@ nothing live until it is re-embedded):
 | `sun-heart-icon.svg` | Icon: a heart held in a bowl-shaped sun with four rays. Stroked line art |
 | `hand-heart-icon.svg` | Icon: an open right hand, fingers up, heart in the palm. Illustrator outline |
 | `hand-point-icon.svg` | Icon: a fist with the index finger raised, heart in the palm. Illustrator outline |
+| `sun-heart-icon.png`, `hand-heart-icon.png`, `hand-point-icon.png` | Renders of the three icons above, white background, 1600 px on the long edge |
+| `arm-commands-sheet.svg` | Contact sheet: the arm diagram on the left, the three icons down the right. Holds no copies — see below |
 
 The arm diagram is **not on the page yet**. Its `.svg` is the master and the `.png` a
 render of it; re-rendering requires the `DejaVu Sans` font the SVG asks for, or every
@@ -548,6 +550,21 @@ mislead you either way. All three are `currentColor` and must be inlined to reco
 `<img>`/`<object>` they stay black. The sun also repeats stroke, width and caps as
 presentation attributes so apps that ignore `<style>` still draw it correctly, and the
 two hands carry a ~7.7 KB base64 C2PA `<metadata>` block from Illustrator.
+
+`arm-commands-sheet.svg` lays all four out together for review. It is **not a copy of
+anything**: each of the four panels is an `<image href="...">` pointing at the real file,
+so editing a source changes the sheet with it and there is no generator to re-run. Two
+consequences. The references are relative, so the sheet only works with its four sources
+beside it. And browsers refuse to load sub-resources inside an `<img src>`, so the sheet
+cannot itself be embedded that way — open the `.svg` directly, or inline it. Each panel
+uses `preserveAspectRatio="xMidYMid meet"`, so a source whose viewBox aspect changes still
+fits its box instead of stretching.
+
+The three icon `.png`s are ordinary snapshots and do **not** track their SVGs — re-render
+when a source changes. Same headless Edge recipe as the arm diagram, one invocation per
+icon, sizing the window to the source viewBox: `1600 × 766` for the sun (`6370 × 3051`)
+and `1224 × 1600` for each hand (`156 × 204`). The C2PA `<metadata>` blocks do not need
+stripping to render; that is only required when inlining to recolour.
 
 Keep these as PNG/SVG. This is line art on a flat background, the case JPEG is worst at:
 exporting `rivercross-white.png` to a quality-95 JPEG produced a 467 KB file against the
