@@ -524,12 +524,30 @@ nothing live until it is re-embedded):
 | `RiverOriginal.png`, `clearriver.png` | Earlier drafts, unused |
 | `arm-commands.svg` / `.png` | Arm diagram mapping the 8 great commands onto an arm and hand, 1600×3485. Black line art |
 | `arm-commands-v30.svg` / `.png` | Working copy of the above, colorized — gold (`#B8860B`) life-line, warm-neutral arm |
+| `sun-heart-icon.svg` | Icon: a heart held in a bowl-shaped sun with four rays. Stroked line art |
+| `hand-heart-icon.svg` | Icon: an open right hand, fingers up, heart in the palm. Illustrator outline |
+| `hand-point-icon.svg` | Icon: a fist with the index finger raised, heart in the palm. Illustrator outline |
 
 The arm diagram is **not on the page yet**. Its `.svg` is the master and the `.png` a
 render of it; re-rendering requires the `DejaVu Sans` font the SVG asks for, or every
 label re-flows in the Arial fallback. Its viewBox height (`24999.01`) is deliberate —
 it preserves the render scale earlier versions used, so keep
 `height = width × 24999.01/11477` if exporting at another width.
+
+The three icons are a matched set and are **not on the page yet** either. They are drawn
+two different ways, so their numbers are not comparable: the sun is stroked line art in a
+`6370 × 3051` viewBox at `stroke-width` 187, while both hands are Illustrator outlines in
+a `156 × 204` viewBox where the hand itself is a *filled* shape about 6 units across and
+only the heart is stroked (`56.68 × scale(0.10586)` and `68.02 × scale(0.08821)` — both
+6.00 units). The sun's 187 was **chosen by eye, not by arithmetic**. Scaling
+the hands' weight by viewBox width (6/156 of 6370) gives 245, and 245 is what exact
+parity would be — but the sun's four long rays carry more of that weight than the hands'
+compact outlines do, so they read heavier at the same fraction. 187 is the number that
+looked right. Do not "correct" it to 245. Reading `stroke-width` across the files will
+mislead you either way. All three are `currentColor` and must be inlined to recolour — via
+`<img>`/`<object>` they stay black. The sun also repeats stroke, width and caps as
+presentation attributes so apps that ignore `<style>` still draw it correctly, and the
+two hands carry a ~7.7 KB base64 C2PA `<metadata>` block from Illustrator.
 
 Keep these as PNG/SVG. This is line art on a flat background, the case JPEG is worst at:
 exporting `rivercross-white.png` to a quality-95 JPEG produced a 467 KB file against the
