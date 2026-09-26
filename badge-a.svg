@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"
+     role="img" aria-labelledby="badge-title badge-desc">
+  <title id="badge-title">Badge a</title>
+  <desc id="badge-desc">A white circle outlined in black with the letter a centred in bold.</desc>
+  <circle cx="50" cy="50" r="42" fill="white" stroke="black" stroke-width="6.72"/>
+  <text x="50" y="69.09" text-anchor="middle"
+        font-family="'DejaVu Sans', Arial, sans-serif" font-size="65.67"
+        font-weight="bold" fill="black">a</text>
+</svg>
