@@ -528,6 +528,8 @@ nothing live until it is re-embedded):
 | `hand-heart-icon.svg` | Icon: an open right hand, fingers up, heart in the palm. Illustrator outline |
 | `hand-point-icon.svg` | Icon: a fist with the index finger raised, heart in the palm. Illustrator outline |
 | `sun-heart-icon.png`, `hand-heart-icon.png`, `hand-point-icon.png` | Renders of the three icons above, white background, 1600 px on the long edge |
+| `badge-a.svg` … `badge-c.svg`, `badge-1.svg` … `badge-8.svg` | The eleven circled labels from the arm diagram as standalone 100×100 icons. White disc, black outline, bold `DejaVu Sans` glyph — geometry scaled from the diagram's own badges |
+| `badge-a.png` … `badge-8.png` | Renders of the eleven badges, white background, 1600×1600 |
 | `arm-commands-sheet.svg` | Contact sheet: the arm diagram on the left, the three icons down the right. Holds no copies — see below |
 
 The arm diagram is **not on the page yet**. Its `.svg` is the master and the `.png` a

@@ -10,8 +10,8 @@
 <line x1="6546.18" y1="-658.81" x2="7688.65" y2="702.72" class="str0"/>
 <line x1="7217.32" y1="-1821.26" x2="8376.80" y2="-1616.81" class="str0"/>
 <g transform="translate(3247.12 17713.57) scale(1,-1)"><g id="sun"><path class="str0" d="M 75.46,19875.57 A 1962.28,1962.28 0 0,1 4000.02,19875.57"/></g></g>
-<text x="4650.0" y="-1520.0" text-anchor="middle" font-family="'DejaVu Sans', Arial, sans-serif" font-size="745" font-weight="bold" fill="black">G</text>
-<text x="5922.0" y="-1520.0" text-anchor="middle" font-family="'DejaVu Sans', Arial, sans-serif" font-size="745" font-weight="bold" fill="black">D</text>
+<text x="4535.0" y="-1520.0" text-anchor="middle" font-family="'DejaVu Sans', Arial, sans-serif" font-size="745" font-weight="bold" fill="black">G</text>
+<text x="6037.0" y="-1520.0" text-anchor="middle" font-family="'DejaVu Sans', Arial, sans-serif" font-size="745" font-weight="bold" fill="black">D</text>
 <path d="M5282,-1840 C5173,-2063.5 4998.6,-1932.7 4998.6,-1801.9 C4998.6,-1703.8 5107.6,-1627.5 5282,-1518.5 C5456.4,-1627.5 5565.4,-1703.8 5565.4,-1801.9 C5565.4,-1932.7 5391,-2063.5 5282,-1840 Z" fill="none" stroke="black" stroke-width="120" stroke-linejoin="round"/>
 <text x="5172.0" y="-1060.0" text-anchor="end" font-family="'DejaVu Sans', Arial, sans-serif" font-size="353" fill="black">Life</text>
 <text x="5392.0" y="-1060.0" text-anchor="start" font-family="'DejaVu Sans', Arial, sans-serif" font-size="353" fill="black">Giver</text>
@@ -62,6 +62,6 @@
 <text x="5272.6" y="3382.0" text-anchor="middle" font-family="'DejaVu Sans', Arial, sans-serif" font-size="440" fill="black">He comes first.</text>
 <text x="3661.3" y="20472.9" text-anchor="middle" font-family="'DejaVu Sans', Arial, sans-serif" font-size="340" fill="black">The work does not get done by human strength or force,</text>
 <text x="3661.3" y="20892.9" text-anchor="middle" font-family="'DejaVu Sans', Arial, sans-serif" font-size="340" fill="black">but by God's Spirit - Zechariah 4:6</text>
-<line x1="5282.0" y1="-1576" x2="5282.0" y2="2360" stroke="black" stroke-width="124" stroke-linecap="round"/>
+<line x1="5282.0" y1="-1566" x2="5282.0" y2="2360" stroke="black" stroke-width="124" stroke-linecap="round"/>
 <line x1="4732.0" y1="530" x2="5832.0" y2="530" stroke="black" stroke-width="124" stroke-linecap="round"/>
 </svg>
