@@ -581,3 +581,27 @@ accept a PNG, generate it as a throwaway rather than committing it here.
 - Self-contained (embedded image, inline styles)
 - Optimized for print (Ctrl+P in browser should produce clean 4-page output) and for mobile/desktop screen viewing (single responsive column)
 - No external dependencies
+
+---
+
+## Arm a b c Handout (`Arm/`)
+
+A separate one-sheet handout, served at `/m2l8gchandout/Arm/` (short link `7gc.me/arm`).
+Front: the arm diagram beside cards a, b, c (the Three Key Verses) and the How-to box.
+Back: cards 1–8 (the Eight General Commands) and the CC0 footer. Prints on one sheet,
+front and back, on US Letter **and** A4 — the on-screen toolbar sets the paper size.
+
+- **`Arm/index.html` is generated — do not hand-edit it.** Edit the card text, How-to
+  steps and footer in `Arm/build-arm-handout.py`, then run `python Arm/build-arm-handout.py`.
+  The build inlines `arm-commands-v30.svg`, the three a/b/c icons, the eight command icons
+  and a DejaVu Sans subset (the diagram's labels are laid out in it).
+- **The build recolours the diagram, not the source SVG:** purple arm outline, gold sun,
+  cross, G♡D and Zechariah block, bold labels, and a re-broken Zechariah 4:6 that ends on
+  the c card's bottom edge.
+- **Command icons 1–8** are drawn by `Arm/icons/make-icons.py`; `Arm/icons/sheet.html`
+  previews them beside the hand icon.
+- **The How-to box follows Card H** (See Him → Love Him → Live for Him). It names no colours,
+  so black-and-white copies still make sense.
+- **Check the fit before shipping any change:** print both sizes to PDF with headless Edge
+  (`?paper=letter`, `?paper=a4`) and confirm 2 pages each *and* look at them. Letter's front
+  is the tight page; a change that fits A4 can still push the How-to box into the diagram.

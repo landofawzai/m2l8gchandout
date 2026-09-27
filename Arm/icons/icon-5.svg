@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Cup">
+  <g fill="none" stroke="currentColor" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M26 14 H74 C74 42 65 56 50 56 C35 56 26 42 26 14 Z"/>
+  <path d="M50 56 V80"/>
+  <path d="M32 88 C36 81 64 81 68 88 Z"/>
+  <path transform="translate(50 26) scale(10)" stroke-width="0.3900" d="M0,1.6 C-0.7,1.1 -1,0.7 -1,0.35 C-1,-0.05 -0.7,-0.3 -0.45,-0.3 C-0.2,-0.3 -0.05,-0.15 0,0.05 C0.05,-0.15 0.2,-0.3 0.45,-0.3 C0.7,-0.3 1,-0.05 1,0.35 C1,0.7 0.7,1.1 0,1.6 Z"/>
+  </g>
+</svg>

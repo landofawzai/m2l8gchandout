@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Praying hands">
+  <g fill="none" stroke="currentColor" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M50 10 C43 11 39 20 37 32 L33 56 C32 62 28 68 22 74 L32 86 C40 80 46 74 50 66"/>
+  <path d="M50 10 C57 11 61 20 63 32 L67 56 C68 62 72 68 78 74 L68 86 C60 80 54 74 50 66"/>
+  <path d="M50 10 V62"/>
+  <path d="M18 80 L30 92"/>
+  <path d="M82 80 L70 92"/>
+  <path transform="translate(50 77) scale(6.5)" stroke-width="0.6000" d="M0,1.6 C-0.7,1.1 -1,0.7 -1,0.35 C-1,-0.05 -0.7,-0.3 -0.45,-0.3 C-0.2,-0.3 -0.05,-0.15 0,0.05 C0.05,-0.15 0.2,-0.3 0.45,-0.3 C0.7,-0.3 1,-0.05 1,0.35 C1,0.7 0.7,1.1 0,1.6 Z"/>
+  </g>
+</svg>

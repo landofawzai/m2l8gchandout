@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Water">
+  <g fill="none" stroke="currentColor" stroke-width="3.9" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M50 8 C50 8 26 38 26 56 C26 70 37 80 50 80 C63 80 74 70 74 56 C74 38 50 8 50 8 Z"/>
+  <path transform="translate(50 50) scale(10)" stroke-width="0.3900" d="M0,1.6 C-0.7,1.1 -1,0.7 -1,0.35 C-1,-0.05 -0.7,-0.3 -0.45,-0.3 C-0.2,-0.3 -0.05,-0.15 0,0.05 C0.05,-0.15 0.2,-0.3 0.45,-0.3 C0.7,-0.3 1,-0.05 1,0.35 C1,0.7 0.7,1.1 0,1.6 Z"/>
+  <path d="M12 92 C18 87 24 87 30 92 C36 97 42 97 48 92 C54 87 60 87 66 92 C72 97 78 97 84 92"/>
+  </g>
+</svg>
