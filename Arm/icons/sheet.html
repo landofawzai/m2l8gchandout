@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Command icons</title>
+<style>
+body { margin: 0; background: #fff; font: 13px Arial, sans-serif; }
+.grid { display: grid; grid-template-columns: repeat(4, 180px); gap: 16px; padding: 16px; }
+.cell { text-align: center; }
+.cell img { width: 120px; height: 120px; border: 1px dashed #ddd; }
+.small { display: flex; justify-content: center; gap: 12px; margin-top: 4px; }
+.small img { width: 28px; height: 28px; border: 0; }
+</style></head><body>
+<div class="grid" id="g"></div>
+<script>
+var names = ["", "Love God", "Love others", "Believe / Spirit", "Baptize", "Lord's Supper", "Pray", "Give", "Make disciples"];
+for (var i = 1; i <= 8; i++) {
+  document.getElementById("g").insertAdjacentHTML("beforeend",
+    '<div class="cell"><img src="icon-' + i + '.svg"><div>' + i + ' ' + names[i] +
+    '</div><div class="small"><img src="icon-' + i + '.svg"><img src="../../hand-heart-icon.svg"></div></div>');
+}
+</script>
+</body></html>
